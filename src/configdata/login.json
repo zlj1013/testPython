@@ -1,0 +1,33 @@
+{
+    "login":{
+        "_apikey":"9ef1a9",
+        "_product_client":" ",
+        "app_source":"12",
+        "appver":"8.2",
+        "cityid":" ",
+        "dealerid":" ",
+        "device":"As5bmQiSGist-ANSfRCwa2sfwWlaM7FrAn15qM21RYBn",
+        "nb":" ",
+        "os":"android",
+        "password":"123456",
+        "sellertoken":" ",
+        "type":"2",
+        "username":"18801043549",
+        "version":" ",
+        "view":" "
+    },
+    "openorder":{
+		"_product_client":"client_b",
+        "app_source":"12",
+        "appver":"8.2",
+		"cityid":"201",
+		"dealerid":"50934",	
+		"device":"868241034453663",
+		"nb":"868241034453663",
+		"os":"android",
+		"sellertoken":"",
+		"type":"1",
+		"version":"",
+		"view":"mobile"	
+    }
+}
