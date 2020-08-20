@@ -27,7 +27,7 @@ class RunMain:
         return json.loads(res)
     
 if __name__ == "__main__":
-    url = 'http://qds.test.youxinpai.com/api/order/wait_bid_order_detail/4481?token=91128abb32a7b960694a890cd69aad4a'
+    url = 'http://qds.demo.youxinpai.com/api/order/wait_bid_order_detail/4481?token=91128abb32a7b960694a890cd69aad4a'
     data = {'token':'91128abb32a7b960694a890cd69aad4a'}
     run = RunMain()
     res = run.run_main(url, 'GET', data)

@@ -17,7 +17,7 @@ pwd = 'hma6RZ!ewMLj'
 receivers = ['zhulijuan1@xin.com', '412059909@qq.com']
 msg = 'Python 测试内容.'
 subject = 'Python 测试标题'
-ROOT_PATH = 'd://test//'
+ROOT_PATH = 'd://demo//'
 
 def sendEmail(subject, msg, receivers):
     msgRoot = MIMEText(msg, 'plain', 'utf-8') #构造MIMEText对象
@@ -55,5 +55,5 @@ def sendAttachmentsEmail(subject, msg, file_name, receivers):
         print ("邮件发送失败," + str(err))
 
 if __name__ == "__main__":
-    sendAttachmentsEmail(subject, msg, 'test.docx', receivers)
+    sendAttachmentsEmail(subject, msg, 'demo.docx', receivers)
     #sendEmail(subject, msg, receivers)

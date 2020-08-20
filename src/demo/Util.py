@@ -17,7 +17,7 @@ def sumStartToEnd(start, end):
 
 #创建一个txt文件，向其写入数据
 def docCreate(name, msg):
-    path = "D:\\test\\";
+    path = "D:\\demo\\";
     full_path = path + name + ".doc";
     print(full_path)
     file = open(full_path, "wb");

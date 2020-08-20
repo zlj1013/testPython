@@ -14,7 +14,7 @@ data = {
         'password':'12345678',
         'telephone':'15000000078'
         }
-url = "http://qds.test.youxinpai.com/api/login"
+url = "http://qds.demo.youxinpai.com/api/login"
 
 def Login_post(url, data):
     res = requests.post(url, data=data).json()

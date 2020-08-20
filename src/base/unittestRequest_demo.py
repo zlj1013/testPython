@@ -18,7 +18,7 @@ class Test(unittest.TestCase):
         self.run = RunMain()
 
     def test_01(self):
-        url = "http://qds.test.youxinpai.com/api/login"
+        url = "http://qds.demo.youxinpai.com/api/login"
         data = {
                 'captcha':'111111',
                 'device_id':'AF8648BF-802B-4937-A780-66E5E758F2E8',
@@ -30,7 +30,7 @@ class Test(unittest.TestCase):
         self.assertEqual(res['status'], 1, '测试失败')
         
     def test_02(self):
-        url = 'http://qds.test.youxinpai.com/api/order/wait_bid_order_detail/4481?token=91128abb32a7b960694a890cd69aad4a'
+        url = 'http://qds.demo.youxinpai.com/api/order/wait_bid_order_detail/4481?token=91128abb32a7b960694a890cd69aad4a'
         data = {'token':'91128abb32a7b960694a890cd69aad4a'}
         res = self.run.run_main(url, 'GET', data)
         self.assertEqual(res['status'], 1, '测试失败')

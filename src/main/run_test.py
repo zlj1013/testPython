@@ -7,7 +7,7 @@ Created on 2018-1-12
 #sys.path.append("D:/Users/zhulijuan1/workspace/testPython")
 from data.get_data import GetData
 from base.runType import RunType
-from util.common_util import CommonUtil
+from util.assert_util import AssertUtil
 from data.dependent_data import DependentData
 from util.email_util import SendEmail
 
@@ -15,7 +15,7 @@ class RunTest:
     def __init__(self):
         self.data = GetData()
         self.type = RunType()
-        self.com_util = CommonUtil()
+        self.com_util = AssertUtil()
         self.send_email = SendEmail()
         #self.depend_data = DependentData()
     #程序执行的
@@ -27,7 +27,7 @@ class RunTest:
         #res = None
         for i in range(1, rows_count):
             isrun = self.data.get_is_run(i)
-            if isrun:
+            if isrun==True:
                 id = self.data.get_request_id(i)
                 url = self.data.get_resquest_url(i)
                 type = self.data.get_resquest_type(i)
@@ -50,7 +50,7 @@ class RunTest:
                     pass_num.append(i)
                     print(id + ':测试通过')
                 else:
-                    self.data.write_result(i, res)
+                    self.data.write_result(i, 'fail')
                     fail_num.append(i)
                     print(id + ':测试失败')
         self.send_email.send_mail(pass_num, fail_num)

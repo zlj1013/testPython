@@ -74,7 +74,7 @@ class GetData:
         col = self.dataconfig.get_result()
         return self.oper_excel.write_value(row, col, value)
         
-    #获取请求 头
+    #获取请求头
     def get_is_header(self, row):
         col = self.dataconfig.get_header()
         isheader = self.oper_excel.get_cell_value(row, col)
